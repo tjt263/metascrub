@@ -6,6 +6,8 @@ import subprocess
 import argparse
 from pathlib import Path
 from PIL import Image
+import pillow_heif # Enables HEIC/AVIF support in Pillow (for iPhone images, etc.)
+pillow_heif.register_heif_opener() # Register HEIC/AVIF support so Pillow can open iPhone images (.heic)
 
 def scrub_file(file_path):
     try:
