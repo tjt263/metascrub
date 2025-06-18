@@ -1,0 +1,2 @@
+# metascrub
+Image metadata scrubber
